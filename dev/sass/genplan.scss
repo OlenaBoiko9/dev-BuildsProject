@@ -1,0 +1,15 @@
+.genplan {
+    height: calc(100vh - $header-height);
+}
+.build-path {
+    fill: #36FF6E; 
+    fill-opacity:0;
+    stroke: #000000;  
+    stroke-opacity: 0;
+    stroke-width: 3px;
+    cursor: pointer;
+    &:hover {
+        fill-opacity:0.37; 
+        stroke-opacity: 1;
+    }
+}
