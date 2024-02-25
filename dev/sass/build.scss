@@ -1,0 +1,36 @@
+.build-path-plan {
+    fill: #05FFFF;
+    fill-opacity: 0;
+    stroke:  #05FFFF; 
+    stroke-opacity: 0;
+    stroke-width: 5px;
+    cursor: pointer;
+    &:hover {
+        fill-opacity: 0.3;
+        stroke-opacity: 1;
+    }
+}
+.build-info {
+    position: absolute;
+    bottom: 4vw;
+    right: 4vw;
+    border: 3px solid #fff;
+    padding: 28px;
+    border-radius: 12px;
+    background-color: #ffffff99;
+    backdrop-filter: blur(1px);
+    color: #000;
+
+    &-list__item {
+        list-style: none;
+        margin-bottom: 12px;
+        font-size: 18px;
+        div {
+            display: flex;
+            justify-content: space-between;
+        }
+       strong{
+        text-decoration: underline;
+        }
+    }
+}
