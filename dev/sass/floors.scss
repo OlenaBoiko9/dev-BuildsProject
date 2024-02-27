@@ -14,19 +14,35 @@
     border-radius: 6px;
     text-align: center;
 }
-.floor-path {
-    fill: #00ff00;
+.flat {
+    &.active {
+        .flat-path {
+            fill: #65ef65;
+            stroke: #65ef65;
+            fill-opacity: 0.5;
+            stroke-opacity: 0.7;
+        }
+    }
+    &:hover {
+        .flat-path {
+            fill-opacity: 0.5;
+            stroke-opacity: 0.7;
+        }
+        }
+
+    &-path {
+        fill: #00ff00;
         stroke: #1d471d;
         fill-opacity: 0;
         stroke-opacity: 0;
         stroke-width: 2px;
         transition: .2s;
         cursor: pointer;
-    &:hover {
-        fill-opacity: 0.5;
-        stroke-opacity: 0.7;
-        }
     }
+    .status {
+        cursor: pointer;
+    }
+}
 
 .status-cell {
     stroke: black; 

@@ -47,10 +47,7 @@ const installGenplan = () => {
 })
 addBooking(builds)
 }
-const installFloor = () => {
-console.log('installFloor');
-}       
-
+     
   document.querySelector('.genplan') ? installGenplan() : null
-  document.querySelector('.floor-plan') ? installFloor() : null
+
 
