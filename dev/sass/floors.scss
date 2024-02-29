@@ -1,15 +1,17 @@
 .floor-info {
     display: flex;
     gap: 24px;
-    background: #7ee7ff;
-    border-radius: 12px;
+    background: #00defc;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
     padding: 24px;
-    margin: 24px 0 36px;
+    margin: 0px 0 36px;
 }
 
 .info-item {
     width: 100%;
-    background: #fff;
+    background: #f6f7fb;
+    color: #000;
     padding: 12px;
     border-radius: 6px;
     text-align: center;
@@ -17,43 +19,67 @@
 .flat {
     &.active {
         .flat-path {
-            fill: #65ef65;
-            stroke: #65ef65;
+            fill: #00ff00;
+            stroke: #1d471d;
             fill-opacity: 0.5;
             stroke-opacity: 0.7;
-        }
+        } 
     }
     &:hover {
         .flat-path {
             fill-opacity: 0.5;
             stroke-opacity: 0.7;
         }
-        }
+    }
 
     &-path {
-        fill: #00ff00;
-        stroke: #1d471d;
+        fill: #4df04d;
+        stroke: rgb(29 71 29);
+        stroke-width: 2px;
         fill-opacity: 0;
         stroke-opacity: 0;
-        stroke-width: 2px;
         transition: .2s;
-        cursor: pointer;
-    }
-    .status {
         cursor: pointer;
     }
 }
 
+.flat.booking {
+    .flat-path {
+        fill: #6B68FF;
+        stroke: #312df6;
+    }
+}
+
+.flat.sold {
+    .flat-path {
+        fill: #D34E4E;
+        stroke: #f11515;
+        cursor: no-drop;
+    }
+}
+
+.flat.free {
+    .flat-path {
+        fill: #00DEFC;
+        stroke: #008fa1;
+    }
+}
+
+.status {
+    cursor: pointer;
+}
+
 .status-cell {
-    stroke: black; 
+    stroke: black;
     stroke-width: 2px;
-}  
+}
 
 .status-cell__number,
 .status-cell__text {
     fill: black;
     font-weight: bold;
 }
+
 .action {
     .status-cell {
         fill: #80D34E;
@@ -78,10 +104,9 @@
     }
 }
 
+
 .status-large-cell {
-    fill: white; 
-    stroke: black; 
-    stroke-width: 2px; 
+    fill: white;
+    stroke: black;
+    stroke-width: 2px;
 }
-
-
